@@ -89,7 +89,7 @@ ng-md-icon a:hover{display: none}
 #nav a{display:inline-block;}
 
 /*PARAGRAPH POSITION*/
-#wrapper{max-width:70%;margin:0 auto;margin-bottom: 160px;}
+#wrapper{max-width:69%;margin:0 auto;margin-bottom: 160px;}
 li{display:inline;}
 li a{padding:15px;font-size: 1.4em;font-weight: bold;}
 li a:hover{color: #eee;background: rgba(0,0,0,0.5);text-decoration:none;}
