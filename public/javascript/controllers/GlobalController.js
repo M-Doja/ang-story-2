@@ -15,13 +15,13 @@
 
     vm.registerUser = function() {
       UserFactory.registerUser(vm.user).then(function() {
-        $state.go('One');
+        $state.go('Home');
       });
     };
 
     vm.loginUser = function() {
       UserFactory.loginUser(vm.user).then(function() {
-        $state.go('One');
+        $state.go('Home');
         vm.user = {};
       });
     };

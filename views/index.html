@@ -13,55 +13,48 @@
 	<link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css'>
 	<link rel="stylesheet" type="text/css" href="/css/animate.css-master/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap_theme.css">
-	<link rel="stylesheet" type="text/css" href="/css/modal.css">
 	<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/site.css">
 
 </head>
 <body class="img-responsive text-center" ng-controller='GlobalController as nav' style=" margin: 0 auto;">
+
+															<!-- ONLY SEE IF USER LOGGED IN -->
 				<div ng-hide='!nav.status.username'layout='row' class="nav navbar-nav center" >
 					<!-- New Addition -->
-			<md-input-container>
-				<div id='' class="container">
-					<div class="login ">
-						<a href="#1" ui-sref='Home' class="navbar-brand"><ng-md-icon icon="home" style="fill:#efbe5d; margin-right:20px;" size="30"></ng-md-icon></a>
-						<h3 style="color:#efbe5d;text-align:right;margin-top:-35px; padding-right:50px">Welcome {{nav.status.username}}</h3>
-						<ul>
-							<li><a href="#" class="navbar-brand" style="background:none;margin-top:-10px;" ng-click="nav.logout()">Log Out</a></li>
-							<li><a href="" class="navbar-brand" style="background:none;margin-top:-10px;" id="myBtn2">Hello {{nav.status.username}}!</a></li>
-						</ul>
-					</div><!-- end addition -->
-					<!-- TITLE & NAVIGATION -->
-			<div id="cd-nav">
-	      <a href="" class="cd-nav-trigger">Menu<span></span></a>
-	      <header>
-	        <a name="1"></a><h1><b>Return To Reality</b></h1><p class="text-center" style="margin-bottom:-10px;"><b>by</b></p><h2><b><i>M. Dunson</b></i></h2>
-	      </header>
-	      <nav id="cd-main-nav">
-	        <ul id="nav">
-	          <li><a href="#2" ui-sref='One'>ONE</a></li>
-	          <li><a href="#3" ui-sref='Two'>TWO</a></li>
-	          <li><a href="#4" ui-sref='Three'>THREE</a></li>
-	          <li><a href="#5" ui-sref='Four'>FOUR</a></li>
-	          <li><a href="#6" ui-sref='Five'>FIVE</a></li>
-	        </ul>
-	      </nav>
-	    </div><!-- End Navigation -->
-		</div><!-- End Head Conatainer -->
-	</md-input-container>
+					<md-input-container>
+						<div id='' class="container">
+							<div class="login ">
+								<a href="#1" ui-sref='Home' class="navbar-brand"><ng-md-icon icon="home" style="fill:#efbe5d; margin-right:20px;" size="30"></ng-md-icon></a>
+								<h3 style="color:#efbe5d;text-align:right;margin-top:-35px; padding-right:50px">Welcome {{nav.status.username}}</h3>
 
+								<ul id="bar">
+									<li><a href="#" class="navbar-brand" style="background:none;margin-top:-10px;" ng-click="nav.logout()">Log Out</a></li>
+									<li><a href="" class="navbar-brand" style="background:none;margin-top:-10px;" id="myBtn2">Hello {{nav.status.username}}!</a></li>
+								</ul>
 
-						<!-- <md-button class="navbar-brand" ng-click="nav.logout()">Logout</md-button> -->
-						<!-- <md-button class="navbar-brand" ui-sref="Home">Home</md-button> -->
-						<!-- <md-button class="navbar-brand" ui-sref="Profile">Profile</md-button> -->
-						<!-- <md-button ui-sref="Profile({id: nav.status._id})"> User Profiles</md-button> -->
-						<!-- <md-button class="navbar-brand" ui-sref="Blog">Blog</md-button> -->
+							</div><!-- end addition -->
+							<!-- TITLE & NAVIGATION -->
+							<div id="cd-nav">
+					      <a href="" class="cd-nav-trigger">Menu<span></span></a>
+					      <header>
+					        <a name="1"></a><h1><b>Return To Reality</b></h1><p class="text-center" style="margin-bottom:-10px;"><b>by</b></p><h2><b><i>M. Dunson</b></i></h2>
+					      </header>
+					      <nav id="cd-main-nav">
+					        <ul id="nav">
+					          <li><a href="#2" ui-sref='One'>ONE</a></li>
+					          <li><a href="#3" ui-sref='Two'>TWO</a></li>
+					          <li><a href="#4" ui-sref='Three'>THREE</a></li>
+					          <li><a href="#5" ui-sref='Four'>FOUR</a></li>
+					          <li><a href="#6" ui-sref='Five'>FIVE</a></li>
+					        </ul>
+					      </nav>
+					    </div><!-- End Navigation -->
+						</div><!-- End Head Conatainer -->
+					</md-input-container>
 				</div>
 
-				<!-- <div class="well container">
-				</div> -->
-
-	<ui-view></ui-view>
+			<ui-view></ui-view>
 
 	<!-- JQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
