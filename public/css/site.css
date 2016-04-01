@@ -42,6 +42,10 @@ footer{font-size: 18px;padding:5px 5px 0;}
   .title{margin-right: 60px;}
   div #form{margin-left: 25px;margin-top:-170px;}}
 
+@media(min-width:768px){
+  .h1, h5 {margin-right:230px;}}
+
+
 @media (min-width:1024px){
   header h1{font-size: 2.6em;}
   #cd-nav{margin-left:50px}
@@ -53,10 +57,12 @@ footer{font-size: 18px;padding:5px 5px 0;}
   md-input-container {margin-left: 40px;}}
 
 @media (min-width:1440px){
+   .h1, h5 {margin-left:100px;}
   #cd-nav{margin-left:90px}
   md-input-container {margin-left: 90px;}}
 
 @media (min-width:2560px){
+  .h1, h5 {margin-right:80px;}
   #cd-nav{margin-left:90px}
   md-input-container .container{margin-left: 540px;}}
 
@@ -66,7 +72,6 @@ footer{font-size: 18px;padding:5px 5px 0;}
 
 .hmText{background:rgba(0,0,0,0.5);border-radius:8px;padding:10px 20px;margin-top:450px;}
 h1 {font-size:50px; text-align:center; line-height:50px;}
-@media(min-width:768px){.h1, h5 {margin-right:250px;}}
 
 h2 {color:#efbe5d; text-align:center; text-transform:uppercase; margin-bottom:20px;}
 
