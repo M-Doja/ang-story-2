@@ -9,7 +9,7 @@ require('./models/BlogModel');
 require('./models/UserModel');
 require('./models/ProfileModel');
 require('./config/passport');
-mongoose.connect('mongodb://localhost/TraveLaw');
+mongoose.connect('mongodb://localhost/Angular-Story');
 // mongoose.connect(process.env.MONGO_STRING);
 
 
