@@ -91,7 +91,7 @@ ng-md-icon a:hover{display: none}
 /*PARAGRAPH POSITION*/
 #wrapper{max-width:69%;margin:0 auto;margin-bottom: 160px;}
 li{display:inline;}
-li a{padding:15px;font-size: 1.4em;font-weight: bold;}
+li a{padding:15px;font-size: 1.2em;font-weight: bold;}
 li a:hover{color: #eee;background: rgba(0,0,0,0.5);text-decoration:none;}
 ul li{display: inline;}
 
@@ -111,6 +111,7 @@ ul li{display: inline;}
   top:40%;
   margin-top:-135px;
   transition: transform 0.3s, visibilty 0s 0.3s;
+  background: rgba(0,0,0,0.8);
 }
 #cd-nav ul.is-hidden {transform:scale(0); transition:transform 0.3s;}
 .cd-nav-trigger {position:fixed; top:75%;margin-top: ;right:0%; width:60px; height:60px; border-radius:25px 0 0 25px; background:#efbe5d; overflow:hidden; text-indent: 100%; white-space:nowrap;z-index:2;}
