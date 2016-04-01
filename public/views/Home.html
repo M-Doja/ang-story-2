@@ -1,0 +1,57 @@
+<div style="background-color:#eea84f"ng-controller="HomeController as vm">
+
+	<div style="text-align:center;font-family:'Architects Daughter', cursive;font-size:5em;font-weight:bold;margin-top:-10px;">{{vm.title}}</div>
+	<h4 style="text-align:center">{{vm.head}}</h4>
+
+<!--
+What will this app do:
+
+1. Select a U.S. State
+2. Select a law category for that state.
+3. User then linked to proper state website
+
+What will app use:
+
+-->
+
+
+<form class="form-inline">
+	<div class="well container" style="text-align:justify;padding:20px">
+		<p style="font-size:20px"><span style="font-size:1.5em">TraveLaws</span> is your one stop resource for law information on different U.S. states. Whether you're on vaction or you're looking to move your business to another state, TraveLaws is the resource for you!</p>
+		<h4>What is TraveLaws?</h4>
+		<p style="margin-top:-20px;">TraveLaws is your go to resource to find different laws for different states all on one site. As some U.S. states don't have goverment websites regarding certain areas of law, here on TraveLaws we make it easy for you to find and connect to those corresponding online state resources.</p>
+	</div>
+<div class="well container" style="background-color:rgba(20,100,0,0.3);padding:20px;">
+	<div >
+		<div>
+				<h3 style="text-align:center">Select a category of law for the corresponding state.</h3>
+				<hr>
+			<div ng-repeat='s in vm.States'>
+				<md-content class="md-padding">
+    <md-card >
+      <!-- <img ng-src="{{imagePath}}" class="md-card-image" alt="Washed Out"> -->
+      <md-card-content id='statePic' style="background-image:url('{{s.image}}');background-repeat: no-repeat;text-align:center;background-size:10%;padding-top:10px">
+
+        <h2 class="md-title">{{s.state}}</h2>
+      </md-card-content>
+
+      <div class="md-actions" layout="row" layout-align="end center">
+        <md-button><a target='_blank' href="{{s.laws.gen}}" >General Laws</a></md-button>
+        <md-button><a target='_blank' href="{{s.laws.traf}}" >Traffic Laws</a></md-button>
+				<md-button><a target='_blank' href="{{s.laws.gun}}" >Gun Laws</a></md-button>
+        <md-button><a target='_blank' href="{{s.laws.bus}}" >Business Laws</a></md-button>
+      </div>
+    </md-card>
+
+				<hr>
+			</div>
+			<md-content>
+				<h3 style="text-align:center;color:red;font-weight:bold">More states coming soon!</h3>
+			</md-content>
+		</div>
+	</div>
+</div>
+</form>
+
+
+</div>

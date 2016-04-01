@@ -1,0 +1,41 @@
+<div ng-controller='BlogController as vm'>
+
+  <div class="container-fluid">
+  	<div class="row">
+  		<div class="col-md-12">
+  			<div style="text-align:center"class="page-header">
+          <md-content style="background-color:#c7b5af" layout-padding>
+  				<h1>
+  					Stories of the open road! <br><small>Have a cool story to share about your travels? Join our blog community and share stories, tips, and advice on how to make your next trip even more special.</small>
+  				</h1>
+          </md-content>
+          </div>
+  		</div>
+  	</div>
+  </div>
+
+    <md-input-container>
+      <md-button  ui-sref='AddBlog' >Add A Blog</md-button>
+    </md-input-container>
+
+
+        <!-- Display all the blogs -->
+  <div ng-repeat="b in vm.blog | orderBy:'-date'"  >
+    <md-content layout-padding style="background-color:#cdafa2">
+      <h1 style="padding-left:50px">{{b.title}}</h1>
+      <img style="padding-left:50px" height='400' width='400' ng-src='{{b.photo}}'>
+
+      <h3 style="padding-left:50px">{{b.subject}}</h3>
+      <h5 style="padding-left:50px">{{b.created}}</h5>
+      <h4 style="padding-left:50px">{{b.createdBy}}</h4>
+      <div class="md-actions" layout="row" >
+        <md-button class='md-primary' ng-click="vm.getBlogById(b)">View More</md-button>
+    </div>
+    <hr>
+    </md-content>
+  </div>
+
+
+
+
+</div> <!-- End of controller  -->

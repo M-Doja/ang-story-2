@@ -1,0 +1,89 @@
+}*/**/
+.picContainer{  max-height: 128px;  max-width: 200px;}
+#footer {  margin-top:50px;}
+md-grid-tile-footer figcaption{  width: 100%;}
+md-grid-tile-footer figcaption .md-button {  margin: 0;}
+/*  TOP    */
+
+/*md-button{margin:0;}*/
+@import url('http://fonts.googleapis.com/css?family=Maven+Pro');
+* {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing:grayscale;}
+html, body { background:url("http://cdn.pcwallart.com/images/starry-night-wallpaper-2.jpg") no-repeat center center fixed;
+ -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;}
+body { font-family:'Maven Pro', sans-serif; font-size:25px; line-height:35px; color:#eee;}
+p { margin-bottom:50px; text-align:justify;}
+a { color:#efbe5d; text-decoration:none; text-transform:uppercase;}
+header { margin:100px auto 100px;}
+#form{}
+#div{margin-bottom:-200px;}
+@media (min-width:1024px){#cd-nav{margin-left:50px}#hmText{margin-top: 0;}}
+@media (min-width:1280px){#cd-nav{margin-left:90px}}
+@media (min-width:1440px){#cd-nav{margin-left:90px}md-input-container {margin-left: 100px;}}
+@media (min-width:2560px){#cd-nav{margin-left:90px}md-input-container .container{margin-left: 540px;}}
+@media (max-width:320px){.hmText{margin-top:0px}}
+.hmText{background:rgba(0,0,0,0.5);border-radius:8px;padding:10px 20px;margin-top:450px;}
+h1 {font-size:50px; text-align:center; line-height:50px;}
+h2 {color:#efbe5d; text-align:center; text-transform:uppercase; margin-bottom:20px;}
+
+
+
+
+
+/*TOP LOGIN BAR*/
+.login{padding-top:5px;font-size:.45em;background:rgba(0,0,0,0.9);width: 100%;z-index: 900;position:fixed;top:0px;right:0px; left:0px; z-index:999;height:40px;}
+.login ul{margin-right: 60px;margin-top: -45px;}
+ng-md-icon a:hover{display: none}
+
+/*MAIN NAV STYLE*/
+#nav{border:solid #ccc; border-width:1px 0; list-style:none; margin:0 0 50px; padding:0; text-align:center;}
+#nav a{display:inline-block;}
+
+/*PARAGRAPH POSITION*/
+#wrapper{max-width:60%;margin:0 auto;}
+li{display:inline;}
+li a{padding:15px;font-size: 1.4em;font-weight: bold;}
+li a:hover{color: #eee;background: rgba(0,0,0,0.5);text-decoration:none;}
+ul li{display: inline;}
+
+/*MENU READY*/
+#cd-nav.is-fixed ul {
+  position:fixed;
+  max-width:125px;
+  transform:scale(0);
+}
+/*display menu when clicked*/
+#cd-nav ul.is-visible {
+  transform:scale(1);
+  transition:transform 0.3s, visibilty 0s 0s;
+}
+#cd-nav ul.has-transitions {
+  right:5%;
+  top:40%;
+  margin-top:-135px;
+  transition: transform 0.3s, visibilty 0s 0.3s;
+}
+#cd-nav ul.is-hidden {transform:scale(0); transition:transform 0.3s;}
+.cd-nav-trigger {position:fixed; top:75%;margin-top: ;right:0%; width:60px; height:60px; border-radius:25px 0 0 25px; background:#efbe5d; overflow:hidden; text-indent: 100%; white-space:nowrap;z-index:2;}
+.cd-nav-trigger span {position:absolute; display:block; width:20px; height:3px; background:#eee; top:50%; margin-top:-1px;left:50%; margin-left:-10px; transition:background 0.3s;}
+
+.cd-nav-trigger span::before,
+.cd-nav-trigger span::after {content:''; position:absolute; left:0; background:inherit;width: 100%; height:100%; transform:translateZ(0); backface-visibility:hidden; transition: transform 0.3s, background 0s;}
+.cd-nav-trigger span::before {top:-8px;transform:rotate(0);}
+.cd-nav-trigger span::after {bottom:-8px; transform:rotate(0);}
+.cd-nav-trigger.menu-is-open span {background: rgba(0,0,0,0);}
+
+.cd-nav-trigger.menu-is-open span::before,
+.cd-nav-trigger.menu-is-open span::after {background:#eee;}
+.cd-nav-trigger.menu-is-open span::before {top:0; transform:rotate(135deg);}
+.cd-nav-trigger.menu-is-open span::after {bottom:0; transform:rotate(225deg);}
+.cd-nav-trigger {visibility:hidden; transform:scale(0); transition:transform 0.3s, visibility 0s 0.3s;}
+.is-fixed .cd-nav-trigger {visibility:visible; transition:all 0s; transform: scale(1); animation:cd-bounce-in 0.3s linear;}
+@keyframes cd-bounce-in {
+  0% { transform: scale(0); }
+  60% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+Style Attribute {
+    background-color: none;
+    color: #fff;
+}
