@@ -46,10 +46,12 @@ footer{font-size: 18px;padding:5px 5px 0;}
 @media (max-width:425px){
   #bar li a{font-size: 13px;}
   #formOne{margin-left: 60px;}
-  .title{margin-right: 60px;}
+  /*.title{margin-right: 60px;}*/
   div #form{margin-left: 25px;margin-top:-170px;}}
 
 @media(min-width:768px){
+  /*.byLog{margin-right:140px;}*/
+  .regTitle{margin-right:-30px;}
   .title{font-size: 3em;display: inline-block;margin-top: 80px;margin-bottom: -40px;}
   .hmIntro{display: inline-block;margin-top:20px; }
   .h1, h5 {margin-right:230px;}}
