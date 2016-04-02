@@ -54,6 +54,7 @@ footer{font-size: 18px;padding:5px 5px 0;}
   div #form{margin-left: 25px;margin-top:-170px;}}
 
 @media(min-width:768px){
+  #bkmk{display: inline-block;margin-left:-230px;}
   /*.byLog{margin-right:140px;}*/
   .regTitle{margin-right:-30px;}
   .title{font-size: 3em;display: inline-block;margin-top: 80px;margin-bottom: -40px;}
@@ -77,6 +78,7 @@ footer{font-size: 18px;padding:5px 5px 0;}
   md-input-container {margin-left: 40px;}}
 
 @media (min-width:1440px){
+  #bkmk{margin-left:-130px;}
   .regTitle{padding-top:100px;}
   .title{font-size: 4.5em;}
   #logForm{margin-top:150px; }
@@ -90,11 +92,11 @@ footer{font-size: 18px;padding:5px 5px 0;}
 @media (min-width:1700px){#cd-nav{margin-left:90px}md-input-container {margin-left: 220px;}.h1, h5 {margin-left:250px;}}
 @media (min-width:1800px){#cd-nav{margin-left:90px}md-input-container {margin-left: 265px;}}
 @media (min-width:1900px){#cd-nav{margin-left:90px}md-input-container {margin-left: 310px;}}
-@media (min-width:2000px){#cd-nav{margin-left:90px}md-input-container {margin-left: 360px;}.h1, h5 {margin-left:250px;}}
+@media (min-width:2000px){#cd-nav{margin-left:90px}md-input-container {margin-left: 360px;}.h1, h5 {margin-left:250px;}#bkmk{margin-left:20px;}}
 @media (min-width:2250px){#cd-nav{margin-left:90px}md-input-container {margin-left: 490px;}.h1, h5 {margin-left:250px;}footer{margin-top: 500px; }}
 @media (min-width:2460px){#cd-nav{margin-left:90px}md-input-container {margin-left: 590px;}.h1, h5 {margin-left:250px;}}
 @media (min-width:2560px){.h1, h5 {margin-right:250px;}#cd-nav{margin-left:90px}md-input-container .container{margin-left: 40px;}}
-@media (min-width:2768px){#cd-nav{margin-left:90px}md-input-container .container{margin-left: 445px;}.h1, h5 {margin-right:215px;}}
+@media (min-width:2768px){#cd-nav{margin-left:90px}md-input-container .container{margin-left: 445px;}.h1, h5 {margin-right:215px;}#bkmk{margin-left:40px;}}
 @media (min-width:3000px){footer{margin-top: 600px; }}
 @media (min-width:3100px){footer{margin-top: 780px; }}
 @media (min-width:3700px){footer{margin-top: 850px; }}
