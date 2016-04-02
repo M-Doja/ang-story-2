@@ -27,7 +27,11 @@
     };
 
     vm.pageTop = function() {
-      window.scrollTo(0, 100);
+      window.scrollTo(0, 0);
+    }
+
+    vm.nextChapter = function() {
+      window.scrollTo(0, 250);
     }
 
 
