@@ -2,8 +2,6 @@
 	'use strict';
 	angular.module('app')
 	.factory('AuthInterceptor', AuthInterceptor);
-
-
 	function AuthInterceptor($window) {
 	var o = {
     request: function(config){

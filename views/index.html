@@ -25,11 +25,12 @@
 					<md-input-container>
 						<div id='headCon' class="container">
 							<div class="login ">
-								<a href="#1" ui-sref='Home' class="navbar-brand"><ng-md-icon icon="home" style="fill:#efbe5d; margin-right:20px;" size="30"></ng-md-icon></a>
-								<h3 style="color:#efbe5d;text-align:right;margin-top:-35px; padding-right:50px">Welcome {{nav.status.username}}</h3>
+								<a   class="navbar-brand"></a>
+								<!-- <h3 style="color:#efbe5d;text-align:right;margin-top:-35px; padding-right:50px">Welcome {{nav.status.username}}</h3> -->
 
 								<ul id="bar">
 									<li><a href="#" class="navbar-brand" style="background:none;margin-top:-10px;" ng-click="nav.logout()">Log Out</a></li>
+									<li><a href="#" class="navbar-brand" style="background:none;margin-top:-10px;" ui-sref="Summary">Summary</a></li>
 									<li><a href="" class="navbar-brand" style="background:none;margin-top:-10px;" id="myBtn2">Hello {{nav.status.username}}!</a></li>
 								</ul>
 
@@ -78,12 +79,12 @@
 	<script src="/javascript/services/UserFactory.js"></script>
 	<script src="/javascript/services/AuthInterceptor.js"></script>
 	<!-- Controllers -->
-	<script src="/javascript/controllers/AddBlogController.js"></script>
-	<script src="/javascript/controllers/AddProfileController.js"></script>
-	<script src="/javascript/controllers/BlogController.js"></script>
 	<script src="/javascript/controllers/GlobalController.js"></script>
-	<script src="/javascript/controllers/HomeController.js"></script>
-	<script src="/javascript/controllers/ProfileController.js"></script>
 	<script src="/javascript/controllers/MainController.js"></script>
+	<script src="/javascript/controllers/OneCtrl.js"></script>
+	<script src="/javascript/controllers/TwoCtrl.js"></script>
+	<script src="/javascript/controllers/ThreeCtrl.js"></script>
+	<script src="/javascript/controllers/FourCtrl.js"></script>
+	<script src="/javascript/controllers/FiveCtrl.js"></script>
 </body>
 </html>

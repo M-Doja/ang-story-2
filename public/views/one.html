@@ -1,4 +1,4 @@
-<div ng-controller='MainController as vm'>
+<div ng-controller='OneCtrl as vm'>
   <div id="wrapper">
   <div class="container">
     <div class="text-center" style="margin:0 auto;">
@@ -6,11 +6,15 @@
       <h1 class="h1"> Chapter One</h1>
       <h5><a href="#" ui-sref='Home'>back home</a></h5>
 
+
     </div>
-
-
-
   </div>
+
+
+  <div class="page "style="">
+    <p><span id="band">{{vm.summary.ChapterOne}}</span></p>
+  </div>
+
 </div>	<!-- End of MainController -->
 <footer class="text-center" style="color:#fff;background:rgb(0,0,0)">&copy 2016 Phoja Unlimited LLC. All Rights Reserved</footer>
 </div>
