@@ -10,7 +10,6 @@ require('./models/UserModel');
 require('./models/ProfileModel');
 require('./config/passport');
 // mongoose.connect('mongodb://localhost/Angular-Story');
-mongoose.connect('mongodb://M-Doja:Patalaska1979@ds011840.mlab.com:11840/angular-story');
 // mongoose.connect(process.env.MONGO_STRING);
 
 
