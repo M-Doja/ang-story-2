@@ -4,7 +4,7 @@
 	<title>Angular Story</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="A angular build template with email messenging, side navigation, and cdns for development.">
+	<meta name="description" content="An angular application with user auth.">
 	<meta name="keywords" content="Javascript, Full-Stack, Front-End, Node, Web Development">
 	<meta name="author" content="Micah Dunson">
 	<meta name="revisit-after" content="30 days">
@@ -23,7 +23,7 @@
 				<div ng-hide='!nav.status.username'layout='row' class="nav navbar-nav center" >
 					<!-- New Addition -->
 					<md-input-container>
-						<div id='' class="container">
+						<div id='headCon' class="container">
 							<div class="login ">
 								<a href="#1" ui-sref='Home' class="navbar-brand"><ng-md-icon icon="home" style="fill:#efbe5d; margin-right:20px;" size="30"></ng-md-icon></a>
 								<h3 style="color:#efbe5d;text-align:right;margin-top:-35px; padding-right:50px">Welcome {{nav.status.username}}</h3>
