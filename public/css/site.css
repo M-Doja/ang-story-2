@@ -43,7 +43,7 @@ footer{font-size: 18px;padding:5px 5px 0;}
   div #form{margin-left: 25px;margin-top:-170px;}}
 
 @media(min-width:768px){
-  #headCon{margin-left:450px}
+  /*#headCon{margin-left:450px}*/
   .h1, h5 {margin-right:230px;}}
 
 
