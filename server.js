@@ -1,6 +1,3 @@
-if(!process.env.NODE_ENV){
-	require('dotenv').load();
-}
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
@@ -13,8 +10,8 @@ require('./models/UserModel');
 require('./models/ProfileModel');
 require('./config/passport');
 // mongoose.connect('mongodb://localhost/Angular-Story');
-// mongoose.connect('');
-mongoose.connect(process.env.MONGO_STRING);
+mongoose.connect('mongodb://M-Doja:Patalaska1979@ds011840.mlab.com:11840/angular-story');
+// mongoose.connect(process.env.MONGO_STRING);
 
 
 app.set('views', path.join(__dirname, 'views'));
