@@ -31,7 +31,7 @@
 								<ul id="bar">
 									<li><a href="#" class="navbar-brand" style="background:none;margin-top:-10px;" ng-click="nav.logout()">Log Out</a></li>
 									<li><a href="#" class="navbar-brand" style="background:none;margin-top:-10px;" ui-sref="Summary">Summary</a></li>
-									<li><a href="" class="navbar-brand" style="background:none;margin-top:-10px;" id="myBtn2">Hello {{nav.status.username}}!</a></li>
+									<li><a href="" ui-sref="Home" class="navbar-brand" style="background:none;margin-top:-10px;" id="myBtn2">Hello {{nav.status.username}}!</a></li>
 								</ul>
 
 							</div><!-- end addition -->
@@ -43,11 +43,11 @@
 					      </header>
 					      <nav id="cd-main-nav">
 					        <ul id="nav">
-					          <li><a href="#2" ui-sref='One'>ONE</a></li>
-					          <li><a href="#3" ui-sref='Two'>TWO</a></li>
-					          <li><a href="#4" ui-sref='Three'>THREE</a></li>
-					          <li><a href="#5" ui-sref='Four'>FOUR</a></li>
-					          <li><a href="#6" ui-sref='Five'>FIVE</a></li>
+					          <li><a href="#2" ui-sref='One' ng-click='nav.pageTop()'>ONE</a></li>
+					          <li><a href="#3" ui-sref='Two' ng-click='nav.pageTop()'>TWO</a></li>
+					          <li><a href="#4" ui-sref='Three' ng-click='nav.pageTop()'>THREE</a></li>
+					          <li><a href="#5" ui-sref='Four' ng-click='nav.pageTop()'>FOUR</a></li>
+					          <li><a href="#6" ui-sref='Five' ng-click='nav.pageTop()'>FIVE</a></li>
 					        </ul>
 					      </nav>
 					    </div><!-- End Navigation -->
