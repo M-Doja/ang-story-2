@@ -8,31 +8,30 @@
     vm.user = {};
     vm.status = UserFactory.status;
 
-    vm.logout = function() {
-      UserFactory.logout();
-      $state.go('Login');
-    };
+
+    vm.pageTop = function() {window.scrollTo(0, 0); }
+    vm.nextChapter = function() {window.scrollTo(0, 250); }
 
     vm.registerUser = function() {
       UserFactory.registerUser(vm.user).then(function() {
         $state.go('Home');
+        window.scrollTo(0, 0);
       });
     };
 
     vm.loginUser = function() {
       UserFactory.loginUser(vm.user).then(function() {
         $state.go('Home');
+        window.scrollTo(0, 0);
         vm.user = {};
       });
     };
+    
+    vm.logout = function() {
+      UserFactory.logout();
+      $state.go('Login');
+    };
 
-    vm.pageTop = function() {
-      window.scrollTo(0, 0);
-    }
-
-    vm.nextChapter = function() {
-      window.scrollTo(0, 250);
-    }
 
 
 

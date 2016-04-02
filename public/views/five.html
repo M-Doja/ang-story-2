@@ -3,8 +3,11 @@
   <div class="container">
     <div class="text-center">
 
-      <h1 class="h1"> Chapter Five</h1>
       <h5><a href="#" ui-sref='Home'ng-click='nav.pageTop()'>back home</a></h5>
+      <h1 class="h1"> Chapter Five</h1>
+      <span id='bkmk'>Bookmark<br>
+        <a href="" ng-click='vm.ON5()'><img id="ON" ng-hide='vm.bookmarkOn'src="/img/bkmk-on.png" alt="bookmark-on" width='35' /></a>
+        <a href="" ng-click='vm.OFF5()'><img id="OFF" ng-hide='vm.bookmarkOff'src="/img/bkmk-off.png" alt="bookmark-off" width='35'/></a></span>
 
     </div>
 
